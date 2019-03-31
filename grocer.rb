@@ -50,7 +50,8 @@ apply_coupons(cart, coupons)
 apply_clearance(cart)
 
 cart.each do |item,info|
-  
-
+  binding.pry
+  cart_total += info[:price]*info[:count]
+end 
 
 end
