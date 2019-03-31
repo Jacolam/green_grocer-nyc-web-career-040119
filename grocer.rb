@@ -50,7 +50,7 @@ cart = consolidate_cart(cart)
 cart = apply_coupons(cart, coupons)
 cart = apply_clearance(cart)
 cart.each do |item,info|
-  binding.pry
+  #binding.pry
   cart_total += info[:price] * info[:count]
 end 
  if cart_total > 100
