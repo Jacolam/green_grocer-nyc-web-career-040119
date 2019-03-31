@@ -46,8 +46,8 @@ end
 
 def checkout(cart, coupons)
 cart_total = 0 
-apply_coupons(cart, coupons)
-apply_clearance(cart)
+cart = apply_coupons(cart, coupons)
+cart = apply_clearance(cart)
 
 cart.each do |item,info|
   binding.pry
