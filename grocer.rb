@@ -53,5 +53,8 @@ cart.each do |item,info|
   binding.pry
   cart_total += info[:price] * info[:count]
 end 
-
+ if cart_total > 100
+   cart_total *= 0.9
+ end 
+ cart_total
 end
